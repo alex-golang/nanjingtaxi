@@ -1,5 +1,10 @@
-nanjingtaxi
+nanjingtaxi (forked)[https://github.com/chewxy/nanjingtaxi]
 ===========
+
+### Personalize
+- [ ] - add logs to understand flow
+
+## Original ##
 
 Nanjing Taxi is a relatively secure distributed P2P chat system. It uses a distributed hash table in the form of a Kademlia network to "host" chatrooms. Clients connect to the network to find a chatroom. Once a client finds its chatroom, the connections in the chatroom is separate from the Kademlia network.
 

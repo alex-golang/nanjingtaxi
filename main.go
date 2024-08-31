@@ -168,6 +168,10 @@ func main() {
 
 	log.Println(os.Args)
 	c := newClient()
+	if len(os.Args) < 2 {
+		log.Printf("1.[main] usage: %v <kademlia port> <chatroom port>\n\tI.E. %[1]v 13370 12345\n", os.Args[0])
+		os.Exit(1)
+	}
 	c.Node.Port, _ = strconv.Atoi(os.Args[1])
 	c.port, _ = strconv.Atoi(os.Args[2])
 
