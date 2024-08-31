@@ -138,7 +138,7 @@ func sendMsg(conn *net.UDPConn, returnAddress *net.UDPAddr, msg Message) {
 	bytesWritten, networkErr := conn.Write(b)
 
 	if networkErr != nil {
-		log.Fatalf("FAILED TO WRITE %d BYTES. Reason: %v", bytesWritten, networkErr)
+		log.Printf("FAILED TO WRITE %d BYTES. Reason: %v", bytesWritten, networkErr)
 		return
 	}
 }
