@@ -12,9 +12,9 @@ cleanArtifacts() {
 buildTaxi() {
     # local oses=(windows darwin)
     # local arch="arm64"
-    # env GOOS=${os} GOARCH=${arch} ${GOBIN} 
+    # env GOOS=${os} GOARCH=${arch}
     #
-    build -work -ldflags="-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn" -o bin/taxi
+    ${GOBIN} build -work -ldflags="-X google.golang.org/protobuf/reflect/protoregistry.conflictPolicy=warn" -o bin/taxi
 }
 ####
 cleanArtifacts
